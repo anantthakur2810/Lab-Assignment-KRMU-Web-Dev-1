@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Web Developer | Designer | Learner</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <hr>
+        <img src="Lab-Assignment-KRMU-Web-Dev-1/lab 2/image.jpg" alt="Profile Photo">
+        <p>Hello! Myself Anant Kumar and I'm a passionate web developer currently learning HTML, CSS, and Python. I love creating responsive and visually appealing websites.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <hr>
+        <table>
+            <tr>
+                <td>HTML</td>
+                <td>Learning</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Beginner</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <hr>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>This is my personal portfolio website showcasing my skills and projects.</p>
+        </div>
+        <div class="project">
+            <h3>Landing Page</h3>
+            <p>A responsive landing page built using HTML and CSS grid/flexbox layouts.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <hr>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" rows="4" placeholder="Your message here..." required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <button id="backToTop">↑</button>
+
+    <footer>
+        <p>© 2025 My Portfolio | Designed by Me</p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById("backToTop");
+        btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    </script>
+</body>
+</html>
